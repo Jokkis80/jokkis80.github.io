@@ -134,6 +134,24 @@
             </div>
           </div>
         </div>
+        <div class="box">
+          <h3>2048 AI</h3>
+          <p>
+            The «How i play Approach» was used for the first heuristic. Move mostly left and down and when there is something big to merge merge it right away. Almost never go right and up only if there is a full row. Final score -> 7346
+          </p>
+          <p>
+            First develop the expactimax approach so it searches with the newly spawned tiles. For each possibility get a score for that branch. The best branch with the highest score wins and that move is done. This is the “What is the perfect possible move” Approach
+<br>Snake:<br>
+The Score is Calculated with a snake pattern. Top left is the head and tail is bottom left. That ensures that the highest number must be in the perfect case in the top left and lowest in bottom left.
+<br>Rowscore:<br>
+The first row has a higher weight than the lower rows so it also ensures that the highest numbers stay up top.
+<br>Bigtiles and zeros:<br>
+If there are more than 4 big tiles (> 64) than the algorithm must adjust itself because the second row is now going to fill up too. If there are not many zeros the depth goes up so It can make better decisions.
+Final Score -> 37132
+
+          </p>
+          </div>
+        </div>
       </section>
 
       <!-- Footer -->
